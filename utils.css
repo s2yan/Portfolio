@@ -1,0 +1,90 @@
+.min-h-screen{
+    min-height: 100vh;
+}
+.bg-red{
+    background-color: red;
+}
+.mx-auto{
+    margin-left:auto;
+    margin-right: auto;;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.mx-1{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.my-1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.mx-2{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.my-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.mx-3{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+}
+.my-3{
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+.px-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.px-2{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.btn{
+    padding: 15px 20px;
+    border-radius: 5px;
+    color:white;
+    background-color: #F64c72;
+    border: none;
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+}
+.grid-repeat-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+.place-center{
+    place-items: center;
+}
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.border-radius{
+    border-radius: 10px;
+}
+.primary-color{
+    color: #F64c72;
+}

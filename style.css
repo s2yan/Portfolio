@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;700;900&family=Lato:wght@700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;700;900&family=Lato:wght@700&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 80vw;
+    background-color: white;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    width: 100%;
+    color: #F64c72;
+    top:0;
+    position: fixed;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.navbar ul li a:hover {
+    color: #F64c72;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile menu */
+
+.mobile-nav .fa-bars,
+.mobile-nav .fa-xmark{
+    display: none;
+}
+.intro{
+    margin-top: 20vh;
+}
+.intro-left .hello{
+    font-size: 3em;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#myImg {
+    height: auto;
+    width: 15em;
+    border-radius: 50%;
+    border-color: #242582;
+    animation: borderAnimation 5s ease-in-out infinite alternate;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #242582;
+        border-top-left-radius: 75%;
+    }
+
+    25% {
+        border-color: #553D67;
+        border-bottom-right-radius: 55%;
+    }
+
+    50% {
+        border-color: #F64C72;
+        border-top-right-radius: 85%;
+    }
+
+    75% {
+        border-color: #997382;
+        border-top-left-radius: 65%;
+    }
+
+    100% {
+        border-color: #2F2Fa2;
+        border-bottom-left-radius: 75%;
+    }
+}
+
+/* Image animation */
+
+/* pulse effect on download cv button */
+.pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(246, 76, 114 ,0.7);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(246, 76, 114 ,0);
+    }
+  }
+
+#about-laptop-img{
+    height: auto;
+    width: 20vw;
+    border-radius: 10px;
+}
+.about-text{
+    width:100%;
+    max-width: 50%;
+}
+
+
+/* skills section */
+.tag {
+    font-size: 2em;
+    margin-top: 2em;
+    align-content: center;
+}
+
+.tag h1 {
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.skills-img {
+    width: 2rem;
+    height: auto;
+    margin: 0 40px;
+}
+
+.socials a img {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.dwnld-btn:hover {
+    background-color: #bf1036;
+}
+.download-cv a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.git-btn{
+    padding: 15px 20px;
+    border-radius: 5px;
+    color:#bf1036;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-content{
+    background-color: black;
+    color: white;
+}
+.footer-content:hover{
+    color :#F64C72
+}
+@media screen and (max-width: 1340px) {
+    .project1 {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .project1 .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project2 .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-used{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .source-code{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .project-video{
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+    .project-video video{
+        width:100%;
+        max-width:50vw;
+    }
+    .project-about{
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .container{
+        width: 100%;
+        max-width: 95vw;
+    }
+    .aboutme {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-text{
+        margin-top: 1.7rem;
+        width: 100%;
+        max-width: 61vw;
+    }
+    #myImg{
+        width: 12rem;
+    }
+    .intro-left{
+        width: 75%;
+        max-width: 44vw;
+    }
+    .intro-right{
+        margin-left: 0;
+    }
+}
+@media  screen and (max-width: 695px) {
+     .container{
+        width:100%;
+        max-width: 90vw;
+    }
+    #myImg{
+        width: 10rem;
+    }
+    
+}
+@media screen and (max-width: 610px) {
+    .container {
+        max-width: 90vw;
+    }
+    
+    .intro-left, .intro-right {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #myImg {
+        width: 8rem;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 64px;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar.active ul {
+        transform: translateX(0);
+    }
+    
+    .navbar ul li {
+        margin: 1rem 0;
+    }
+    
+    .navbar ul li a {
+        color: white;
+        /* display: none; */
+    }
+    .mobile-nav .fa-bars{
+        display: block;
+    }
+    #nav-items {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        color: white;
+        margin-top: -100%;
+        animation: slideDown 0.5s forwards, fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes slideDown {
+        0% {
+            margin-top: -100%;
+        }
+        100% {
+            margin-top: 4vh;
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    
+    #nav-items ul {
+        list-style-type: none;
+        padding: 0; 
+        margin: 0; 
+    }
+    
+    #nav-items ul li {
+        margin: 0; 
+        padding: 10px 0;
+    }
+    
+    #nav-items ul li a {
+        display: block; 
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px; 
+        transition: color 0.3s; 
+    }
+    
+    #nav-items ul li a:hover {
+        color: #f64c72;
+        background-color: rgba(255, 255, 255, 0.1); 
+    }
+    
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    
+    .intro-left .hello {
+        font-size: 2em;
+    }
+    
+    .intro-right {
+        display: flex;
+        margin-left: 0;
+        margin-top: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .intro-right img {
+        width: 80%;
+        max-width: 200px;
+    }
+    
+    .download-cv button {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .socials {
+        margin-top: 1rem;
+        flex-direction: row;
+    }
+    
+    .socials a {
+        margin: 0 0.5rem;
+    }
+    
+    .aboutme {
+        padding: 1rem;
+    }
+    
+    .about-bg img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    
+    .about-text {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .tag {
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
+    
+    .mySkills {
+        flex-direction: column;
+    }
+    
+    .skills-img {
+        width: 3rem;
+        margin: 0.5rem 0;
+    }
+    
+    .project1, .project2 {
+        flex-direction: column;
+    }
+    
+    .project1 .flex, .project2 .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tech-used {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-video video {
+        max-width: 90vw;
+    }
+    
+    .project-about {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 448px) {
+
+    .about-text {
+        width: 100%;
+        max-width: 58vw;
+        max-height: 300px;
+        overflow-y: auto; 
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}

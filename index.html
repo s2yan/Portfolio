@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar flex items-center justify-around py-1">
+                <div>
+                    <h1>Sayan</h1>
+                </div>
+                <ul class="flex">
+                    <li><a class="mx-1" href="#home">Home</a></li>
+                    <li><a class="mx-1" href="#about">About</a></li>
+                    <li><a class="mx-1" href="#skills">Skills</a></li>
+                    <li><a class="mx-1" href="#portfolio">Portfolio</a></li>
+                </ul>
+                <div class="mobile-nav">
+                    <i class="fa-solid fa-bars fa-1.75x openMenu" style="color: aliceblue;"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="nav-items" class="justify-around items-center" style="display: none;">
+        <ul class="flex flex-col justify-a items-center">
+            <li><a class="mx-1" href="#home">Home</a></li>
+            <li><a class="mx-1" href="#about">About</a></li>
+            <li><a class="mx-1" href="#skills">Skills</a></li>
+            <li><a class="mx-1" href="#portfolio">Portfolio</a></li>
+        </ul>
+        <div>
+            <i class="fa-solid fa-xmark fa-1.75x closeMenu" style="color: aliceblue;"></i>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <main class="min-h-screen">
+            <section id="home">
+                <!-- Small intro about me -->
+                <div class="intro flex justify-center">
+                    <div class="intro-left mx-2">
+                        <h1 class="hello">Hello</h1>
+                        <h1 class="name">I'M <span class ="primary-color">Sayan</span></h1>
+                        <p>A passionate Frontend End Developer and Programmer based in Kolkata, India</p>
+                    </div>
+                    <div class="intro-right mx-2">
+                        <img id="myImg" src="Images/myImage.jpg" alt="myImage" />
+                    </div>
+                </div>
+
+                <!-- Download Cv and Social links -->
+                <div class="flex flex-col justify-center items-center">
+                    <div class="download-cv my-3">
+                        <a class="btn dwnld-btn my-2 pulse" href='Resume/Sayan_BiswasCV(2023).pdf' download>Download
+                            Cv</a>
+                    </div>
+                    <div class="socials">
+                        <a class="mx-1" href="#"><img src="Images/linkedin.png" alt="linkedin" /></a>
+                        <a class="mx-1" href="#"><img src="Images/github.png" alt="github" /></a>
+                        <a class="mx-1" href="#"><img src="Images/twitter.png" alt="twitter" /></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About me -->
+            <section id="about" class="flex flex-col items-center shadow border-radius my-2">
+                <div class="tag">
+                    <h1>About Me</h1>
+                </div>
+                <div class="aboutme flex justify-center items-center my-3">
+                    <div class="about-bg mx-2">
+                        <img id="about-laptop-img" src="Images/aboutMe-bg.jpg" alt="aboutme" />
+                    </div>
+                    <div class="about-text flex flex-col items-center">
+                        <p>I'm Sayan Biswas, a coder and web developer. I thrive on turning complex challenges into
+                            elegant solutions through my skills. My goal is to bridge the gap between creative ideas and
+                            functional websites, ensuring seamless user experiences. With a focus on responsive design
+                            and a passion for innovation, I craft platforms that adapt beautifully across devices.my
+                            portfolio reflects my dedication to shaping the digital sphere. Let's merge technology and
+                            creativity to build a captivating online world. Join me in this journey of crafting digital
+                            excellence! 🚀💻
+                        </p>
+                        <div class="grid grid-repeat-2 my-2" style="width: 100%;">
+                            <p class="my-1"><span class="primary-color">Name</span> - Sayan Biswas</p>
+                            <p class="my-1"><span class="primary-color">Email</span> - sayanbiswas614@gamil.com</p>
+                            <p class="my-1"><span class="primary-color">Education</span> - B.Tech in Electrical engineering</p>
+                            <p class="my-1"><span class="primary-color">College</span> - FIEM(Batch - 2023)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills and tech stack -->
+            <section id="skills">
+                <div class="flex flex-col justify-center items-center my-2">
+                    <div class="tag">
+                        <h1>My Skills</h1>
+                    </div>
+                    <div class="flex mySkills my-3 items-center px-1">
+                        <h3 class="mx-2">Tech stack</h3>
+                        <div class="flex flex-col items-center">
+                            <img class="skills-img" src="Images/html5.png" alt="Html" />
+                            <p class="my-1">HTMl</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="skills-img" src="Images/css3.png" alt="css" />
+                            <p class="my-1">CSS</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="skills-img" src="Images/javascript.png" alt="js" />
+                            <p class="my-1">javascript</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="skills-img" src="Images/react.png" alt="reactjs" />
+                            <p class="my-1">React Js</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img class="skills-img" src="Images/java.png" alt="java" />
+                            <p class="my-1">Java</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prtfolio section -->
+            <section id="portfolio" class="flex flex-col items-center">
+                <div class="tag">
+                    <h1>Portfoilio</h1>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="">
+                        <h1>Each project is a unique piece of development.</h1>
+                    </div>
+                    <!-- Project1 -->
+                    <div class="project1 my-3 grid grid-repeat-2 place-center shadow px-2 border-radius">
+                        <div class="project-video my-3">
+                            <video width="854" height="480" controls>
+                                <source src="Videos/iNotebook.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-about mx-2 my-3 flex flex-col items-center"
+                            style="width: 100%; max-width: 60%;">
+                            <div class="tag my-2">
+                                <h1 class="primary-color">iNotebook</h1>
+                            </div>
+                            <p>In this project I used React and Bootstrap Frameworks,It is basically an Note taking website where a pirticular user can
+                                sign up if not signed uped and login later to take notes and delete them or edit them accoding there need. </p>
+                            <div class="tech-used flex my-2">
+                                <h1 class="mx-2">React</h1>
+                                <h1 class="mx-2">Bootstrap</h1>
+                            </div>
+                            <div class="source-code flex items-center">
+                                <a href="https://github.com/s2yan/TextUtility" target="_blank" class="git-btn">Show
+                                    Code</a>
+                                <img src="Images/github.png" alt="githubIcon" width="50vw" height="auto" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Project2 -->
+                    <div class="project2 my-3 grid grid-repeat-2 place-center shadow px-2 border-radius">
+                        <div class="project-about mx-2 my-3 flex flex-col items-center "
+                            style="width: 100%; max-width: 60%;">
+                            <div class="tag my-2">
+                                <h1 class="primary-color">To-Do List</h1>
+                            </div>
+                            <p>This is a basic to do list website I created using React, Bootstrap, some of the functionalities are - we are able to make a to-do list
+                                It shows the all the list items the complted lists and we can also mark lists as finished if those are completed, The completed lists are shownn in another module.
+                            </p>
+                            <div class="tech-used flex my-2">
+                                <h1 class="mx-2">React</h1>
+                                <h1 class="mx-2">Bootstrap</h1>
+                            </div>
+                            <div class="source-code my-3 flex items-center">
+                                <a href="https://github.com/s2yan/TextUtility" target="_blank" class="git-btn">Show
+                                    Code</a>
+                                <img src="Images/github.png" alt="githubIcon" width="50vw" height="auto" />
+                            </div>
+                        </div>
+
+                        <div class="project-video my-3">
+                            <video width="854" height="480" controls>
+                                <source src="Videos/ToDoList.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Project3 -->
+                    <div class="project2 my-3 grid grid-repeat-2 place-center shadow px-2 border-radius">
+                        <div class="project-video my-3">
+                            <video width="854" height="480" controls>
+                                <source src="Videos/TextToolify.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="project-about mx-2 my-3 flex flex-col items-center "
+                            style="width: 100%; max-width: 60%;">
+                            <div class="tag my-2">
+                                <h1 class="primary-color">Text-Toolify</h1>
+                            </div>
+                            <p>This website can be used to modify Sentencses, phrases, Paragraphs etc. some of the functionalities are converting to uppercase, converting to lowercase, Sentense case, Removing extra spaces and some more..</p>
+                            <div class="tech-used flex my-2">
+                                <h1 class="mx-2">React</h1>
+                                <h1 class="mx-2">Bootstrap</h1>
+                            </div>
+                            <div class="source-code my-3 flex items-center">
+                                <a href="https://github.com/s2yan/TextUtility" target="_blank" class="git-btn">Show
+                                    Code</a>
+                                <img src="Images/github.png" alt="githubIcon" width="50vw" height="auto" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project4 -->
+                    <div class="project2 my-3 grid grid-repeat-2 place-center shadow px-2 border-radius">
+                        <div class="project-about mx-2 my-3 flex flex-col items-center "
+                            style="width: 100%; max-width: 60%;">
+                            <div class="tag my-2">
+                                <h1 class="primary-color">Restaurant Demo website</h1>
+                            </div>
+                            <p>This is one of my first websites this is just made using HTMl and CSS. It is a restaurant demo website.</p>
+                            <div class="tech-used flex my-2">
+                                <h1 class="mx-2">HTMl</h1>
+                                <h1 class="mx-2">CSS</h1>
+                            </div>
+                            <div class="source-code my-3 flex items-center">
+                                <a href="https://github.com/s2yan/TextUtility" target="_blank" class="git-btn">Show
+                                    Code</a>
+                                <img src="Images/github.png" alt="githubIcon" width="50vw" height="auto" />
+                            </div>
+                        </div>
+
+                        <div class="project-video my-3">
+                            <video width="854" height="480" controls>
+                                <source src="Videos/Restaurant.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="bg-red">
+        <div class="footer-content flex justify-center py-1">
+            <p>&copy; 2023 Sayan Biswas. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a78a11cef1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
