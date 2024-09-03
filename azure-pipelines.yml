@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  Default
+  Azure Pipelines
 
 steps:
 - task: ArchiveFiles@2
