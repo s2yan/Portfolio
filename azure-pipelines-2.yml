@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  Traing Pool
+  TrainingPool
 
 steps:
 - task: ArchiveFiles@2
