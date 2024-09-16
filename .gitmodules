@@ -1,0 +1,3 @@
+[submodule "CBTC"]
+	path = CBTC
+	url = https://github.com/s2yan/CBTC.git
